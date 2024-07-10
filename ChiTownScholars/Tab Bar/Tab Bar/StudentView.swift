@@ -27,6 +27,7 @@ struct StudentView: View {
                     Text("Profile")
                 }
         }
+        
     }
 }
 

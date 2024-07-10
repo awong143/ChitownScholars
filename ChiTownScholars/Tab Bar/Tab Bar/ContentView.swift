@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SignUpView : View {
     var body : some View {
-        Text("Sign Up")
+        
         TabView{
             TutorSignUp()
                 .tabItem{
@@ -20,8 +20,10 @@ struct SignUpView : View {
                 .tabItem{
                     Image(systemName: "studentdesk")
                     Text("Student")
+                        
                 }
         }
+        .navigationBarHidden(true)
     }
 }
 
@@ -83,9 +85,11 @@ struct ContentView : View {
                 
                 NavigationLink(destination: SignUpView()) {
                     Text("Don't have an account? Sign up here")
+                        
                 }
 
             }
+            
         }
     }
 }
